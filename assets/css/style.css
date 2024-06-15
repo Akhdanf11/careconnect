@@ -24,7 +24,7 @@ img.logoimage{
 }
 
 nav{
-    background: #6D2419;
+    background: #517C7D;
     height: auto;
     width: 100%;
 }
@@ -32,11 +32,11 @@ nav{
 span.navbartext{
     font-weight: 625;
     font-size: 22px;
-    color: white;
+    color: #fff;
 }
 
 label.logo{
-    color: #FFFF;
+    color: #517C7D;
     font-size: 25px;
     font-weight: 600;
     line-height: 60px;
@@ -52,26 +52,48 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #FFFF;
+    color: #517C7D;
     font-size: 15px;
     padding: 5px 15px 5px;
     border-radius: 20px;
 }
 
 a.active{
-    background: #FFFF;
+    color: #517C7D;
+    background: #fff;
     text-decoration: none;
     text-align: center;
-    color: #1E1918;
     font-weight: 400;
     width: 100px;
 }
 
+a.active{
+    background: transparent;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    width: 100px;
+}
+
+a.active:hover{
+    background: transparent;
+    text-decoration: none;
+    text-align: center;
+    color: #517C7D;
+    font-weight: 400;
+    width: 100px;
+}
+
+a.nav-link{
+    color: #fff !important;
+}
+
 a.nav-link:hover{
-    background: #FFFF;
+    outline: 2px solid #fff;
     transition: .2s;
     text-decoration: none;
-    color: #1E1918 !important;
+    color: #fff !important;
     padding: 5px 20px;
 }
 
