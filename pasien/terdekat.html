@@ -272,6 +272,29 @@
       </div>
 </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="izinkanlokasi" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="izinkanlokasiLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+          <h1 class="modal-title fs-4 fw-bold mx-auto text-warning" id="izinkanlokasiLabel">
+            <i class="bi bi-exclamation-triangle-fill"></i>
+              Izinkan Lokasi
+          </h1>
+          </div>
+          <div class="modal-body">
+          <div class="fs-5 text-center">
+            Apakah kami dapat mengakses lokasi kamu saat ini ?
+          </div>
+          </div>
+          <div class="modal-footer">
+          <button type="button" class="btn btn-outline-success fs-5" data-bs-dismiss="modal">Ya, Izinkan</button>
+          </div>
+      </div>
+      </div>
+  </div>
+  <!-- End Of Modal -->
+
 <!-- Modal -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -309,6 +332,12 @@
             button.innerHTML = 'Lihat Selengkapnya &emsp;<i class="bi bi-chevron-down"></i>';
         }
       }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        const modalElement = document.getElementById('izinkanlokasi');
+        const modalInstance = new bootstrap.Modal(modalElement);
+        modalInstance.show();
+    });
 
       function toggleContent2() {
         var content = document.getElementById("myDIV2");
